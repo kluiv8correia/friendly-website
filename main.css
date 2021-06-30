@@ -1,0 +1,119 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #e1f5fe;
+    margin: 0;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    align-items: center;
+    padding:0px 20px;
+    background-color: #002171;
+    color: white;
+    box-shadow: 0px 3px 5px grey;
+}
+.navbar ul {
+    display: flex;
+    list-style: none;
+    margin: auto;
+}
+.navbar a {
+    text-decoration: none;
+    padding: 0px min(25px, 1.5vw);
+    color: white;
+    transition: all 0.2s ease-out;
+}
+.navbar a:hover {
+    color: yellow;
+    font-size: 1.02rem;
+}
+.product-listing {
+    display: grid;
+    margin: min(50px, 3vh) auto 50px auto;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 40px;
+    grid-template-areas: 
+    "poster spec"
+    "poster buttons";
+}
+.poster {
+    grid-area: poster;
+    display: flex;
+
+    margin: 10px 0px 10px auto;
+}
+.poster img {
+    width: 50vh;
+    border-radius: 10px;
+    box-shadow: 0px 3px 3px grey;
+    transition: all 0.2s ease-in-out;
+}
+.poster img:hover {
+    transform: translateY(-7px);
+    box-shadow: 0px 8px 10px grey;
+}
+.product-spec {
+    grid-area: spec;
+    display: flex;
+    width: min(500px, 80%);
+    justify-content: left;
+    align-items: flex-end;
+    padding-bottom: 50px;
+    text-align: left;
+}
+.product-spec p {
+    width: 80%;
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+}
+.buttons {
+    grid-area: buttons;
+    display: inline-flex;
+    height: max-content;
+    width: max-content;
+}
+.buttons a {
+    margin: 6px;
+    transition: all 0.2s ease-out;
+}
+.buttons a:hover {
+    filter: brightness(125%);
+    box-shadow: 0px 0 10px darkslategray;
+}
+.order {
+    background-color: gold;
+    padding: 0.8rem;
+    font-weight: bold;
+    border-radius: 7px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: goldenrod;
+    color: darkgoldenrod
+}
+.like {
+    background-color: #e9467c;
+    padding: 0.8rem 1.2rem;
+    border-radius: 7px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #5a3742;
+    color: white;
+}
+.cart {
+    background-color: greenyellow;
+    color: green;
+    padding: 0.8rem;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 7px;
+}
+.footer {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    background-color: #002171;
+    text-align: center;
+    color: white;
+}
